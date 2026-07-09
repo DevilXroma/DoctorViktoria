@@ -12,26 +12,24 @@
   </head>
   <body>
     <header class="site-header" id="top">
-      <a class="logo" href="index.html" aria-label="На главную">
-        <span class="logo-mark">DV</span>
-        <span><strong>Dr. Viktoria</strong><small>хирург</small></span>
-      </a>
+      <a class="logo" href="index.html" aria-label="На главную"><span class="logo-mark">DV</span><span><strong>Dr. Viktoria</strong><small>хирург</small></span></a>
       <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
       <nav class="main-nav" aria-label="Основная навигация">
-        <a href="index.html#directions">Направления</a>
+        <a href="index.html">Главная</a>
         <a href="services.html">Услуги</a>
         <a href="about.html">О враче</a>
-        <a href="index.html#faq">FAQ</a>
-        <a href="index.html#contacts">Контакты</a>
+        <a href="index.html#contacts" class="nav-contact">Запись</a>
       </nav>
-      <a class="header-cta" href="index.html#contacts">Записаться</a>
     </header>
 
     <main>
-      <section class="page-hero section-pad">
-        <p class="eyebrow">Каталог</p>
-        <h1>Услуги и направления</h1>
-        <p>Эта страница нужна для полного перечня работ. Сейчас тут заглушки, потом заменим на реальные операции и консультации.</p>
+      <section class="page-hero section-pad page-hero-visual">
+        <div>
+          <p class="eyebrow">Каталог</p>
+          <h1>Услуги и направления</h1>
+          <p>Полный перечень работ будет здесь. Сейчас это аккуратный каркас с фильтрами и местами под визуалы.</p>
+        </div>
+        <div class="page-visual visual-placeholder"><span>Услуги</span></div>
       </section>
 
       <section class="section section-pad compact-section" id="catalog">
@@ -42,34 +40,25 @@
           <button class="filter-btn" type="button" data-filter="plastic">Пластика</button>
         </div>
 
-        <div class="service-section-label" id="general">
-          <p class="eyebrow">Общая хирургия</p>
-        </div>
+        <div class="service-section-label" id="general"><p class="eyebrow">Общая хирургия</p></div>
         <div class="services-grid catalog-grid">
-          <article class="service-card" data-category="general"><span>Консультация</span><h3>Первичный прием хирурга</h3><p>Осмотр, разбор жалоб, заключений и дальнейший план обследования или лечения.</p></article>
-          <article class="service-card" data-category="general"><span>Наблюдение</span><h3>Послеоперационный контроль</h3><p>Контроль восстановления, рекомендации, перевязки и оценка динамики.</p></article>
-          <article class="service-card" data-category="general"><span>Мягкие ткани</span><h3>Образования кожи и тканей</h3><p>Оценка необходимости удаления, диагностики или наблюдения.</p></article>
-          <article class="service-card" data-category="general"><span>Планово</span><h3>Грыжи и другие жалобы</h3><p>Разбор симптомов, показаний к операции и сроков вмешательства.</p></article>
+          <article class="service-card visual-service" data-category="general"><div class="service-media visual-placeholder"><span>01</span></div><div><span>Консультация</span><h3>Первичный прием хирурга</h3><p>Осмотр и понятный план дальнейших действий.</p><details><summary>Подробнее</summary><p>Разбор жалоб, документов, обследований и показаний к лечению.</p></details></div></article>
+          <article class="service-card visual-service" data-category="general"><div class="service-media visual-placeholder"><span>02</span></div><div><span>Наблюдение</span><h3>Послеоперационный контроль</h3><p>Проверка восстановления и рекомендации.</p><details><summary>Подробнее</summary><p>Контрольные визиты, перевязки и оценка динамики после вмешательства.</p></details></div></article>
+          <article class="service-card visual-service" data-category="general"><div class="service-media visual-placeholder"><span>03</span></div><div><span>Мягкие ткани</span><h3>Образования кожи и тканей</h3><p>Оценка, диагностика или удаление по показаниям.</p><details><summary>Подробнее</summary><p>Точный список процедур уточним после данных врача.</p></details></div></article>
         </div>
 
-        <div class="service-section-label" id="oncology">
-          <p class="eyebrow">Хирургическая онкология</p>
-        </div>
+        <div class="service-section-label" id="oncology"><p class="eyebrow">Хирургическая онкология</p></div>
         <div class="services-grid catalog-grid">
-          <article class="service-card" data-category="oncology"><span>Второе мнение</span><h3>Разбор диагноза</h3><p>Оценка имеющихся обследований и предложенного плана лечения.</p></article>
-          <article class="service-card" data-category="oncology"><span>Тактика</span><h3>План хирургического лечения</h3><p>Обсуждение показаний, рисков, подготовки и дальнейшего наблюдения.</p></article>
-          <article class="service-card" data-category="oncology"><span>Документы</span><h3>Разбор обследований</h3><p>Заключения, снимки, анализы и вопросы, которые важно уточнить до операции.</p></article>
-          <article class="service-card" data-category="oncology"><span>Маршрут</span><h3>Что делать дальше</h3><p>Понятный следующий шаг: дополнительные обследования, консультации или операция.</p></article>
+          <article class="service-card visual-service" data-category="oncology"><div class="service-media visual-placeholder accent-soft"><span>01</span></div><div><span>Второе мнение</span><h3>Разбор диагноза</h3><p>Оценка обследований и предложенной тактики.</p><details><summary>Подробнее</summary><p>Пациент приносит заключения, анализы, снимки и вопросы.</p></details></div></article>
+          <article class="service-card visual-service" data-category="oncology"><div class="service-media visual-placeholder accent-soft"><span>02</span></div><div><span>Тактика</span><h3>План хирургического лечения</h3><p>Показания, риски, подготовка и наблюдение.</p><details><summary>Подробнее</summary><p>Формулировки потом уточним под реальные зоны специализации.</p></details></div></article>
+          <article class="service-card visual-service" data-category="oncology"><div class="service-media visual-placeholder accent-soft"><span>03</span></div><div><span>Маршрут</span><h3>Что делать дальше</h3><p>Понятный следующий шаг после консультации.</p><details><summary>Подробнее</summary><p>Дополнительные обследования, консультации или подготовка к операции.</p></details></div></article>
         </div>
 
-        <div class="service-section-label" id="plastic">
-          <p class="eyebrow">Пластическая хирургия</p>
-        </div>
+        <div class="service-section-label" id="plastic"><p class="eyebrow">Пластическая хирургия</p></div>
         <div class="services-grid catalog-grid">
-          <article class="service-card" data-category="plastic"><span>Старт</span><h3>Первичная консультация</h3><p>Анализ запроса, ожиданий, анатомических особенностей и противопоказаний.</p></article>
-          <article class="service-card" data-category="plastic"><span>План</span><h3>Подготовка к операции</h3><p>Какие обследования нужны, как проходит подготовка и что важно заранее.</p></article>
-          <article class="service-card" data-category="plastic"><span>Реабилитация</span><h3>План восстановления</h3><p>Сроки, ограничения, контрольные визиты и рекомендации после операции.</p></article>
-          <article class="service-card" data-category="plastic"><span>Ожидания</span><h3>Реалистичный результат</h3><p>Обсуждение желаемого результата, медицинских ограничений и безопасности.</p></article>
+          <article class="service-card visual-service" data-category="plastic"><div class="service-media visual-placeholder blush-soft"><span>01</span></div><div><span>Старт</span><h3>Первичная консультация</h3><p>Запрос, ожидания, ограничения и безопасность.</p><details><summary>Подробнее</summary><p>Оценка анатомических особенностей и противопоказаний.</p></details></div></article>
+          <article class="service-card visual-service" data-category="plastic"><div class="service-media visual-placeholder blush-soft"><span>02</span></div><div><span>Подготовка</span><h3>План операции</h3><p>Обследования, сроки и реалистичный результат.</p><details><summary>Подробнее</summary><p>Без обещаний идеального результата, только после очного приема.</p></details></div></article>
+          <article class="service-card visual-service" data-category="plastic"><div class="service-media visual-placeholder blush-soft"><span>03</span></div><div><span>Реабилитация</span><h3>Восстановление</h3><p>Ограничения, контрольные визиты и рекомендации.</p><details><summary>Подробнее</summary><p>Сроки и детали зависят от типа вмешательства.</p></details></div></article>
         </div>
       </section>
 
@@ -78,19 +67,13 @@
           <p class="eyebrow">Запись</p>
           <h2>Нужна консультация?</h2>
           <p>После уточнения данных тут будут реальные контакты и адрес клиники.</p>
-          <div class="contact-actions">
-            <a class="button button-primary" href="tel:+000000000000">Позвонить</a>
-            <a class="button button-secondary" href="https://wa.me/000000000000">WhatsApp</a>
-          </div>
+          <div class="contact-actions"><a class="button button-primary" href="tel:+000000000000">Позвонить</a><a class="button button-secondary" href="https://wa.me/000000000000">WhatsApp</a></div>
         </div>
+        <div class="contact-visual visual-placeholder"><span>Клиника</span></div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <p>© <span id="year"></span> Dr. Viktoria. Информация на сайте не заменяет очную консультацию врача.</p>
-      <a href="#top">Наверх ↑</a>
-    </footer>
-
+    <footer class="site-footer"><p>© <span id="year"></span> Dr. Viktoria. Информация на сайте не заменяет очную консультацию врача.</p><a href="#top">Наверх ↑</a></footer>
     <script src="script.js"></script>
   </body>
 </html>
