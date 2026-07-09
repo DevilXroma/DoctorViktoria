@@ -1,65 +1,51 @@
 const body = document.body;
-const navToggle = document.querySelector('.nav-toggle');
-const navLinks = document.querySelectorAll('.main-nav a');
+const menuButton = document.querySelector('.menu-button');
+const navLinks = document.querySelectorAll('.nav a');
 const year = document.querySelector('#year');
 const filterButtons = document.querySelectorAll('.filter-btn');
-const serviceCards = document.querySelectorAll('.service-card');
-const faqItems = document.querySelectorAll('.faq-item');
+const catalogCards = document.querySelectorAll('.catalog-card');
 
 if (year) {
   year.textContent = new Date().getFullYear();
 }
 
-if (navToggle) {
-  navToggle.addEventListener('click', () => {
-    const isOpen = body.classList.toggle('nav-open');
-    navToggle.setAttribute('aria-expanded', String(isOpen));
+if (menuButton) {
+  menuButton.addEventListener('click', () => {
+    const isOpen = body.classList.toggle('menu-open');
+    menuButton.setAttribute('aria-expanded', String(isOpen));
   });
 }
 
 navLinks.forEach((link) => {
-  const href = link.getAttribute('href') || '';
-  const linkPath = href.split('#')[0];
-  const hasHash = href.includes('#');
-  const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  const linkPage = link.getAttribute('href')?.split('#')[0];
 
-  if (!hasHash && linkPath === currentPath) {
+  if (linkPage === currentPage && !link.getAttribute('href')?.includes('#')) {
     link.classList.add('active');
   }
 
   link.addEventListener('click', () => {
-    body.classList.remove('nav-open');
-    navToggle?.setAttribute('aria-expanded', 'false');
+    body.classList.remove('menu-open');
+    menuButton?.setAttribute('aria-expanded', 'false');
   });
 });
 
-function applyServiceFilter(filter) {
-  filterButtons.forEach((item) => {
-    item.classList.toggle('active', item.dataset.filter === filter);
+function setFilter(filter) {
+  filterButtons.forEach((button) => {
+    button.classList.toggle('active', button.dataset.filter === filter);
   });
 
-  serviceCards.forEach((card) => {
-    const shouldShow = filter === 'all' || card.dataset.category === filter;
-    card.classList.toggle('is-hidden', !shouldShow);
+  catalogCards.forEach((card) => {
+    const visible = filter === 'all' || card.dataset.category === filter;
+    card.classList.toggle('is-hidden', !visible);
   });
 }
 
 filterButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    applyServiceFilter(button.dataset.filter || 'all');
-  });
+  button.addEventListener('click', () => setFilter(button.dataset.filter || 'all'));
 });
 
-const hashFilter = window.location.hash.replace('#', '');
-if (['general', 'oncology', 'plastic'].includes(hashFilter)) {
-  applyServiceFilter(hashFilter);
+const hash = window.location.hash.replace('#', '');
+if (['general', 'oncology', 'plastic'].includes(hash)) {
+  setFilter(hash);
 }
-
-faqItems.forEach((item) => {
-  const button = item.querySelector('button');
-
-  button?.addEventListener('click', () => {
-    const isOpen = item.classList.toggle('open');
-    button.setAttribute('aria-expanded', String(isOpen));
-  });
-});
