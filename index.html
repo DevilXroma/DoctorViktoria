@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://images.unsplash.com" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=8" />
+    <link rel="stylesheet" href="styles.css?v=9" />
   </head>
   <body>
     <header class="header">
@@ -24,9 +24,7 @@
         <button type="button" data-lang="ru" aria-label="Русский">🇷🇺</button>
       </div>
 
-      <button class="menu-button" type="button" aria-label="Открыть меню" aria-expanded="false">
-        <span></span><span></span>
-      </button>
+      <button class="menu-button" type="button" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
 
       <nav class="nav" aria-label="Основная навигация">
         <a href="index.html" data-i18n="nav.home">Главная</a>
@@ -49,6 +47,11 @@
           <div class="chips" aria-label="Краткая информация">
             <span data-i18n="common.city">Ереван</span><span data-i18n="common.byAppointment">по записи</span><span>RU / AM / EN</span>
           </div>
+          <div class="hero-facts" aria-label="Профессиональные акценты">
+            <div><strong data-i18n="home.fact.1.title">3 направления</strong><span data-i18n="home.fact.1.text">хирургическая консультация, онкоразбор и пластика</span></div>
+            <div><strong data-i18n="home.fact.2.title">Очный план</strong><span data-i18n="home.fact.2.text">решение после осмотра и документов</span></div>
+            <div><strong data-i18n="home.fact.3.title">Контроль</strong><span data-i18n="home.fact.3.text">подготовка и восстановление</span></div>
+          </div>
         </div>
         <div class="photo-card hero-photo">
           <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=1400" alt="Женщина-врач в клинике" />
@@ -56,10 +59,33 @@
         </div>
       </section>
 
+      <section class="section container tight">
+        <div class="trust-grid">
+          <article>
+            <span>01</span>
+            <h3 data-i18n="home.trust.1.title">Диагностика до решения</h3>
+            <p data-i18n="home.trust.1.text">Сначала жалобы, анамнез, осмотр и документы. Только потом обсуждение операции и альтернатив.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3 data-i18n="home.trust.2.title">Показания и риски</h3>
+            <p data-i18n="home.trust.2.text">Пациент получает не рекламное обещание, а понятное объяснение пользы, ограничений и возможных рисков.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3 data-i18n="home.trust.3.title">План восстановления</h3>
+            <p data-i18n="home.trust.3.text">До вмешательства обсуждаются сроки, контрольные визиты, ограничения и признаки, требующие связи с врачом.</p>
+          </article>
+        </div>
+      </section>
+
       <section class="section container">
-        <div class="section-head">
-          <p class="label" data-i18n="home.directions.label">Направления</p>
-          <h2 data-i18n="home.directions.title">С чем можно обратиться</h2>
+        <div class="section-head split-head">
+          <div>
+            <p class="label" data-i18n="home.directions.label">Направления</p>
+            <h2 data-i18n="home.directions.title">С чем можно обратиться</h2>
+          </div>
+          <p data-i18n="home.directions.note">Карточки ниже — быстрый вход в основные направления. Полный перечень услуг и подробные пояснения вынесены на отдельную страницу.</p>
         </div>
 
         <div class="cards three">
@@ -99,10 +125,11 @@
       </section>
 
       <section class="section container compact">
-        <div class="process-card">
+        <div class="process-card elevated">
           <div>
             <p class="label" data-i18n="home.process.label">Прием</p>
             <h2 data-i18n="home.process.title">Коротко и по делу</h2>
+            <p data-i18n="home.process.text">Пациенту не нужно угадывать, что будет дальше. Каждый этап консультации объясняется заранее.</p>
           </div>
           <div class="steps">
             <div class="step"><b>1</b><span data-i18n="step.book">Запись</span></div>
@@ -113,15 +140,20 @@
         </div>
       </section>
 
-      <section class="section container compact">
-        <div class="wide-card">
-          <div>
-            <p class="label" data-i18n="home.catalog.label">Каталог</p>
-            <h2 data-i18n="home.catalog.title">Подробный перечень консультаций и услуг</h2>
-            <p data-i18n="home.catalog.text">На отдельной странице собраны основные ситуации, с которыми можно обратиться: от первичного приема и второго мнения до подготовки к операции и послеоперационного наблюдения.</p>
-            <a class="button secondary" href="services.html" data-i18n="home.catalog.button">Открыть услуги</a>
+      <section class="section container compact" id="prepare">
+        <div class="prepare-card">
+          <div class="prepare-copy">
+            <p class="label" data-i18n="home.prepare.label">Перед приемом</p>
+            <h2 data-i18n="home.prepare.title">Что подготовить</h2>
+            <p data-i18n="home.prepare.text">Если документы уже есть, их лучше взять с собой. Это помогает быстрее понять ситуацию и не назначать лишние обследования.</p>
+            <ul class="check-list">
+              <li data-i18n="home.prepare.item.1">результаты анализов, УЗИ, КТ, МРТ или маммографии;</li>
+              <li data-i18n="home.prepare.item.2">заключения, выписки, гистологию или биопсию;</li>
+              <li data-i18n="home.prepare.item.3">список лекарств, аллергий и перенесенных операций;</li>
+              <li data-i18n="home.prepare.item.4">короткий список вопросов, которые важно обсудить.</li>
+            </ul>
           </div>
-          <div class="image-slot"><img src="https://images.unsplash.com/photo-1581093458791-9d42e370901d?auto=format&fit=crop&q=80&w=900" alt="Медицинские документы и план лечения" /></div>
+          <div class="image-slot prepare-image"><img src="https://images.unsplash.com/photo-1581093458791-9d42e370901d?auto=format&fit=crop&q=80&w=900" alt="Медицинские документы и план лечения" /></div>
         </div>
       </section>
 
@@ -166,6 +198,7 @@
       <a href="#top" data-i18n="footer.top">Наверх ↑</a>
     </footer>
 
-    <script src="script.js?v=5"></script>
+    <a class="mobile-booking" href="#contacts" data-i18n="common.book">Записаться</a>
+    <script src="script.js?v=6"></script>
   </body>
 </html>
