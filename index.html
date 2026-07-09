@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Dr. Viktoria — хирург: консультации, общая хирургия, онкохирургия и пластическая хирургия." />
+    <meta name="description" content="Dr. Viktoria — хирург: консультации, операции, общая хирургия, онкохирургия и пластическая хирургия." />
     <title>Dr. Viktoria — хирург</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://images.unsplash.com" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=9" />
+    <link rel="stylesheet" href="styles.css?v=10" />
   </head>
   <body>
     <header class="header">
@@ -19,9 +19,9 @@
       </a>
 
       <div class="language-switch" aria-label="Выбор языка">
-        <button type="button" data-lang="hy" aria-label="Հայերեն">🇦🇲</button>
-        <button type="button" data-lang="en" aria-label="English">🇬🇧</button>
-        <button type="button" data-lang="ru" aria-label="Русский">🇷🇺</button>
+        <button type="button" data-lang="hy" aria-label="Հայերեն"><span class="flag flag-am"></span></button>
+        <button type="button" data-lang="en" aria-label="English"><span class="flag flag-gb"></span></button>
+        <button type="button" data-lang="ru" aria-label="Русский"><span class="flag flag-ru"></span></button>
       </div>
 
       <button class="menu-button" type="button" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
@@ -37,25 +37,17 @@
     <main>
       <section class="hero container">
         <div class="hero-copy">
-          <p class="label" data-i18n="home.hero.label">Общая хирургия · Онкохирургия · Пластическая хирургия</p>
-          <h1 data-i18n="home.hero.title">Хирург, которому важно объяснить лечение понятно</h1>
-          <p class="lead" data-i18n="home.hero.text">Доктор Виктория Арменовна Меликян помогает пациенту разобраться в диагнозе, оценить необходимость операции и пройти путь лечения спокойно: от первичной консультации до восстановления.</p>
+          <p class="label">Общая хирургия · Онкохирургия · Пластическая хирургия</p>
+          <h1>Консультации и операции с понятным планом лечения</h1>
+          <p class="lead">Доктор Виктория Арменовна Меликян не только консультирует пациентов, но и проводит хирургическое лечение по показаниям: от подготовки к операции до послеоперационного наблюдения и восстановления.</p>
           <div class="actions">
             <a class="button primary" href="#contacts" data-i18n="common.book">Записаться</a>
             <a class="button secondary" href="services.html" data-i18n="common.viewServices">Смотреть услуги</a>
           </div>
-          <div class="chips" aria-label="Краткая информация">
-            <span data-i18n="common.city">Ереван</span><span data-i18n="common.byAppointment">по записи</span><span>RU / AM / EN</span>
-          </div>
-          <div class="hero-facts" aria-label="Профессиональные акценты">
-            <div><strong data-i18n="home.fact.1.title">3 направления</strong><span data-i18n="home.fact.1.text">хирургическая консультация, онкоразбор и пластика</span></div>
-            <div><strong data-i18n="home.fact.2.title">Очный план</strong><span data-i18n="home.fact.2.text">решение после осмотра и документов</span></div>
-            <div><strong data-i18n="home.fact.3.title">Контроль</strong><span data-i18n="home.fact.3.text">подготовка и восстановление</span></div>
-          </div>
         </div>
         <div class="photo-card hero-photo">
           <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=1400" alt="Женщина-врач в клинике" />
-          <div class="photo-note"><strong data-i18n="doctor.name">Доктор Виктория Арменовна Меликян</strong><small data-i18n="home.hero.note">хирургическая консультация и сопровождение пациента</small></div>
+          <div class="photo-note"><strong>Доктор Виктория Арменовна Меликян</strong><small>хирургическое лечение, консультации и сопровождение пациента</small></div>
         </div>
       </section>
 
@@ -63,18 +55,18 @@
         <div class="trust-grid">
           <article>
             <span>01</span>
-            <h3 data-i18n="home.trust.1.title">Диагностика до решения</h3>
-            <p data-i18n="home.trust.1.text">Сначала жалобы, анамнез, осмотр и документы. Только потом обсуждение операции и альтернатив.</p>
+            <h3>От консультации до операции</h3>
+            <p>Пациент получает не общие слова, а понятный маршрут: что проверить, когда нужна операция, как подготовиться и чего ожидать после.</p>
           </article>
           <article>
             <span>02</span>
-            <h3 data-i18n="home.trust.2.title">Показания и риски</h3>
-            <p data-i18n="home.trust.2.text">Пациент получает не рекламное обещание, а понятное объяснение пользы, ограничений и возможных рисков.</p>
+            <h3>Решение по показаниям</h3>
+            <p>Операция обсуждается только после осмотра, анализа документов и оценки пользы, рисков, сроков и альтернатив.</p>
           </article>
           <article>
             <span>03</span>
-            <h3 data-i18n="home.trust.3.title">План восстановления</h3>
-            <p data-i18n="home.trust.3.text">До вмешательства обсуждаются сроки, контрольные визиты, ограничения и признаки, требующие связи с врачом.</p>
+            <h3>Сопровождение после лечения</h3>
+            <p>Контроль заживления, коррекция рекомендаций, ограничения по нагрузке и возвращение к обычной активности — часть плана.</p>
           </article>
         </div>
       </section>
@@ -82,44 +74,47 @@
       <section class="section container">
         <div class="section-head split-head">
           <div>
-            <p class="label" data-i18n="home.directions.label">Направления</p>
-            <h2 data-i18n="home.directions.title">С чем можно обратиться</h2>
+            <p class="label">Направления</p>
+            <h2>Хирургические направления</h2>
           </div>
-          <p data-i18n="home.directions.note">Карточки ниже — быстрый вход в основные направления. Полный перечень услуг и подробные пояснения вынесены на отдельную страницу.</p>
+          <p>Каждое направление включает очную консультацию, оценку показаний, подготовку к вмешательству и хирургическое лечение в рамках выбранной тактики.</p>
         </div>
 
         <div class="cards three">
           <article class="card service-preview">
             <div class="thumb"><img src="https://images.unsplash.com/photo-1581595220892-b0739db3ba8c?auto=format&fit=crop&q=80&w=900" alt="Операционная и хирургическое направление" /></div>
-            <h3 data-i18n="service.general.title">Общая хирургия</h3>
-            <p data-i18n="service.general.short">Консультации по хирургическим жалобам, подготовка к плановому лечению и наблюдение после операции.</p>
+            <span class="service-tag">Плановое лечение</span>
+            <h3>Общая хирургия</h3>
+            <p>Диагностика хирургических жалоб, подготовка к операции, малые вмешательства, плановое лечение и послеоперационный контроль.</p>
             <details>
-              <summary data-i18n="common.whatIncluded">Что входит</summary>
-              <p data-i18n="service.general.more">На приеме врач разбирает жалобы, историю болезни, результаты анализов и обследований. После осмотра пациент получает понятный план: нужно ли дополнительное обследование, есть ли показания к операции, насколько срочно нужно действовать и как подготовиться к лечению.</p>
+              <summary>Что входит</summary>
+              <p>На приеме врач разбирает жалобы, историю болезни, анализы и обследования. После осмотра пациент получает план: нужно ли дополнительное обследование, есть ли показания к операции, насколько срочно нужно действовать и как подготовиться к лечению.</p>
             </details>
-            <a class="text-link" href="services.html#general" data-i18n="common.more">Подробнее</a>
+            <a class="text-link" href="services.html#general">Подробнее</a>
           </article>
 
           <article class="card service-preview">
             <div class="thumb"><img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=900" alt="Врач изучает медицинские снимки" /></div>
-            <h3 data-i18n="service.oncology.title">Хирургическая онкология</h3>
-            <p data-i18n="service.oncology.short">Разбор диагноза, второе мнение, оценка обследований и хирургической тактики.</p>
+            <span class="service-tag">Онкоразбор и операция</span>
+            <h3>Хирургическая онкология</h3>
+            <p>Второе мнение, разбор обследований, оценка операбельности, подготовка к хирургическому этапу и наблюдение после лечения.</p>
             <details>
-              <summary data-i18n="common.whatToBring">Что взять</summary>
-              <p data-i18n="service.oncology.more">Лучше принести все заключения, результаты биопсии, КТ, МРТ, УЗИ, выписки и список вопросов. Врач помогает понять, что уже известно, каких данных не хватает, когда операция действительно показана и как хирургический этап сочетается с другими методами лечения.</p>
+              <summary>Что взять</summary>
+              <p>Лучше принести заключения, результаты биопсии, КТ, МРТ, УЗИ, выписки и список вопросов. Врач помогает понять, что уже известно, каких данных не хватает и как хирургический этап сочетается с другими методами лечения.</p>
             </details>
-            <a class="text-link" href="services.html#oncology" data-i18n="common.more">Подробнее</a>
+            <a class="text-link" href="services.html#oncology">Подробнее</a>
           </article>
 
           <article class="card service-preview">
             <div class="thumb"><img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=80&w=900" alt="Врач на консультации по эстетической хирургии" /></div>
-            <h3 data-i18n="service.plastic.title">Пластическая хирургия</h3>
-            <p data-i18n="service.plastic.short">Консультация по эстетическим изменениям, ожиданиям, рискам, подготовке и восстановлению.</p>
+            <span class="service-tag">Эстетическая хирургия</span>
+            <h3>Пластическая хирургия</h3>
+            <p>Консультация, подбор методики, предоперационное планирование, пластические операции и сопровождение восстановления.</p>
             <details>
-              <summary data-i18n="common.atVisit">На приеме</summary>
-              <p data-i18n="service.plastic.more">Консультация начинается с обсуждения запроса пациента и медицинских ограничений. Врач объясняет, какие варианты коррекции возможны, где проходят границы безопасного результата, как проходит подготовка, какие анализы нужны и чего ожидать в период восстановления.</p>
+              <summary>На приеме</summary>
+              <p>Врач обсуждает запрос пациента, медицинские ограничения и реалистичный результат. Объясняет возможные варианты операции, подготовку, анализы, риски и этапы восстановления.</p>
             </details>
-            <a class="text-link" href="services.html#plastic" data-i18n="common.more">Подробнее</a>
+            <a class="text-link" href="services.html#plastic">Подробнее</a>
           </article>
         </div>
       </section>
@@ -127,15 +122,15 @@
       <section class="section container compact">
         <div class="process-card elevated">
           <div>
-            <p class="label" data-i18n="home.process.label">Прием</p>
-            <h2 data-i18n="home.process.title">Коротко и по делу</h2>
-            <p data-i18n="home.process.text">Пациенту не нужно угадывать, что будет дальше. Каждый этап консультации объясняется заранее.</p>
+            <p class="label">Как проходит работа</p>
+            <h2>Путь пациента</h2>
+            <p>От первичного приема до операции и контрольных визитов — пациент понимает, зачем нужен каждый следующий шаг.</p>
           </div>
           <div class="steps">
-            <div class="step"><b>1</b><span data-i18n="step.book">Запись</span></div>
-            <div class="step"><b>2</b><span data-i18n="step.exam">Осмотр</span></div>
-            <div class="step"><b>3</b><span data-i18n="step.plan">План</span></div>
-            <div class="step"><b>4</b><span data-i18n="step.follow">Контроль</span></div>
+            <div class="step"><b>1</b><span>Запись</span></div>
+            <div class="step"><b>2</b><span>Осмотр</span></div>
+            <div class="step"><b>3</b><span>Операционный план</span></div>
+            <div class="step"><b>4</b><span>Контроль</span></div>
           </div>
         </div>
       </section>
@@ -143,14 +138,16 @@
       <section class="section container compact" id="prepare">
         <div class="prepare-card">
           <div class="prepare-copy">
-            <p class="label" data-i18n="home.prepare.label">Перед приемом</p>
-            <h2 data-i18n="home.prepare.title">Что подготовить</h2>
-            <p data-i18n="home.prepare.text">Если документы уже есть, их лучше взять с собой. Это помогает быстрее понять ситуацию и не назначать лишние обследования.</p>
+            <p class="label">Перед консультацией</p>
+            <h2>Что подготовить</h2>
+            <p>Чем больше медицинской информации есть на приеме, тем точнее можно обсудить показания к операции, риски и дальнейший план.</p>
             <ul class="check-list">
-              <li data-i18n="home.prepare.item.1">результаты анализов, УЗИ, КТ, МРТ или маммографии;</li>
-              <li data-i18n="home.prepare.item.2">заключения, выписки, гистологию или биопсию;</li>
-              <li data-i18n="home.prepare.item.3">список лекарств, аллергий и перенесенных операций;</li>
-              <li data-i18n="home.prepare.item.4">короткий список вопросов, которые важно обсудить.</li>
+              <li>результаты анализов крови и мочи, если они уже есть;</li>
+              <li>УЗИ, КТ, МРТ, маммографию или другие снимки;</li>
+              <li>заключения врачей, выписки, гистологию или биопсию;</li>
+              <li>список лекарств, аллергий и хронических заболеваний;</li>
+              <li>информацию о прошлых операциях и осложнениях, если они были;</li>
+              <li>короткий список вопросов: про операцию, сроки, восстановление и стоимость.</li>
             </ul>
           </div>
           <div class="image-slot prepare-image"><img src="https://images.unsplash.com/photo-1581093458791-9d42e370901d?auto=format&fit=crop&q=80&w=900" alt="Медицинские документы и план лечения" /></div>
@@ -160,18 +157,16 @@
       <section class="section faq-section" id="faq">
         <div class="container">
           <div class="section-head">
-            <p class="label" data-i18n="home.faq.label">Вопросы</p>
-            <h2 data-i18n="home.faq.title">Перед консультацией</h2>
+            <p class="label">Вопросы</p>
+            <h2>Перед консультацией</h2>
           </div>
           <div class="faq-list">
-            <details class="faq-item">
-              <summary data-i18n="faq.tests.q">Нужно ли приходить с анализами?</summary>
-              <p data-i18n="faq.tests.a">Если обследования уже есть, лучше взять их с собой: анализы, УЗИ, КТ, МРТ, гистологию, выписки и назначения. Если документов нет, врач после осмотра подскажет, какие исследования действительно нужны, а какие можно не делать заранее.</p>
-            </details>
-            <details class="faq-item">
-              <summary data-i18n="faq.second.q">Можно ли получить второе мнение?</summary>
-              <p data-i18n="faq.second.a">Да. Второе мнение особенно полезно, если уже предложена операция, есть несколько вариантов лечения или пациенту важно спокойно разобраться в диагнозе и последовательности действий.</p>
-            </details>
+            <details class="faq-item"><summary>Она только консультирует или оперирует тоже?</summary><p>На сайте речь идет не только о консультациях. Виктория Арменовна проводит хирургическое лечение по показаниям, а консультация нужна, чтобы безопасно определить тактику, объем операции и подготовку.</p></details>
+            <details class="faq-item"><summary>Нужно ли приходить с анализами?</summary><p>Если обследования уже есть, лучше взять их с собой. Если документов нет, врач после осмотра подскажет, какие исследования действительно нужны перед операцией или наблюдением.</p></details>
+            <details class="faq-item"><summary>Можно ли получить второе мнение?</summary><p>Да. Второе мнение полезно, если уже предложена операция, есть онкологический диагноз или пациент хочет спокойно понять последовательность лечения.</p></details>
+            <details class="faq-item"><summary>Когда становится понятно, нужна ли операция?</summary><p>Обычно после осмотра и анализа документов. Иногда для решения нужны дополнительные обследования, чтобы не делать вмешательство без достаточных показаний.</p></details>
+            <details class="faq-item"><summary>Можно ли обсудить пластическую операцию заранее?</summary><p>Да. На консультации обсуждаются желаемый результат, ограничения, возможная методика, анализы, риски, сроки восстановления и реалистичные ожидания.</p></details>
+            <details class="faq-item"><summary>Как формируется стоимость?</summary><p>Стоимость зависит от диагноза, объема вмешательства, клиники, анестезии, расходных материалов и количества контрольных визитов. Точный расчет возможен после очной оценки.</p></details>
           </div>
         </div>
       </section>
@@ -179,9 +174,9 @@
       <section class="section container" id="contacts">
         <div class="contact-grid">
           <div class="contact-card">
-            <p class="label" data-i18n="contact.label">Запись</p>
-            <h2 data-i18n="contact.title">Записаться на консультацию</h2>
-            <p data-i18n="contact.text">Можно обратиться для первичного приема, второго мнения, подготовки к плановой операции или контроля после лечения. Реальные контакты, адрес клиники и расписание добавим после уточнения.</p>
+            <p class="label">Запись</p>
+            <h2>Записаться на консультацию</h2>
+            <p>Можно обратиться для первичного приема, второго мнения, подготовки к плановой операции, пластического вмешательства или контроля после хирургического лечения.</p>
             <div class="actions">
               <a class="button light" href="tel:+000000000000" data-i18n="contact.call">Позвонить</a>
               <a class="button light" href="https://wa.me/000000000000">WhatsApp</a>
@@ -194,12 +189,11 @@
     </main>
 
     <footer class="footer container">
-      <p data-i18n="footer.disclaimer">© <span id="year"></span> Dr. Viktoria. Информация на сайте не заменяет очную консультацию врача.</p>
+      <p>© <span id="year"></span> Dr. Viktoria. Информация на сайте не заменяет очную консультацию врача.</p>
       <a href="#top" data-i18n="footer.top">Наверх ↑</a>
     </footer>
 
     <a class="mobile-booking" href="#contacts" data-i18n="common.book">Записаться</a>
-    <script src="script.js?v=6"></script>
-    <script src="polish.js?v=1"></script>
+    <script src="script.js?v=10"></script>
   </body>
 </html>
