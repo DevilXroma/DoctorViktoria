@@ -3,84 +3,80 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="О враче Dr. Viktoria: опыт, подход, документы, сертификаты и клинические случаи." />
+    <meta name="description" content="О враче Dr. Viktoria: опыт, подход, документы и клинические материалы." />
     <title>О враче — Dr. Viktoria</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=5" />
   </head>
   <body>
-    <header class="site-header" id="top">
-      <a class="logo" href="index.html" aria-label="На главную"><span class="logo-mark">DV</span><span><strong>Dr. Viktoria</strong><small>хирург</small></span></a>
-      <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
-      <nav class="main-nav" aria-label="Основная навигация">
+    <header class="header">
+      <a class="brand" href="index.html"><span class="brand-mark">DV</span><span><strong>Dr. Viktoria</strong><small>хирург</small></span></a>
+      <button class="menu-button" type="button" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
+      <nav class="nav" aria-label="Основная навигация">
         <a href="index.html">Главная</a>
         <a href="services.html">Услуги</a>
         <a href="about.html">О враче</a>
-        <a href="index.html#contacts" class="nav-contact">Запись</a>
+        <a class="nav-cta" href="index.html#contacts">Запись</a>
       </nav>
     </header>
 
     <main>
-      <section class="page-hero section-pad about-hero">
+      <section class="page-hero container">
         <div>
-          <p class="eyebrow">О враче</p>
+          <p class="label">О враче</p>
           <h1>Доктор Виктория [Фамилия]</h1>
-          <p>Профиль врача: опыт, подход к пациентам, документы и материалы для доверия.</p>
+          <p class="lead">Профиль врача: опыт, подход к пациентам, документы и материалы для доверия.</p>
         </div>
-        <div class="profile-photo visual-placeholder"><span>Портрет</span></div>
+        <div class="image-slot page-visual">Портрет</div>
       </section>
 
-      <section class="section section-pad split-lite compact-section">
-        <div class="wide-card visual-card-large">
-          <div class="wide-card-copy">
-            <p class="eyebrow">Подход</p>
+      <section class="section container compact">
+        <div class="wide-card">
+          <div>
+            <p class="label">Подход</p>
             <h2>Спокойно, понятно, по показаниям</h2>
-            <p>Здесь позже будет короткий личный текст: образование, опыт, клиники и профессиональные принципы.</p>
+            <p>Позже здесь будет короткий личный текст: образование, опыт, клиники и профессиональные принципы.</p>
           </div>
-          <div class="wide-card-media visual-placeholder accent-soft"><span>Рабочее фото</span></div>
+          <div class="image-slot">Рабочее фото</div>
         </div>
       </section>
 
-      <section class="section section-pad muted compact-section" id="documents">
-        <div class="section-heading light-heading">
-          <p class="eyebrow">Документы</p>
-          <h2>Образование и сертификаты</h2>
-        </div>
-        <div class="documents-grid compact-docs">
-          <article><div class="doc-thumb visual-placeholder"><span>PDF</span></div><span>Диплом</span><strong>Медицинское образование</strong></article>
-          <article><div class="doc-thumb visual-placeholder"><span>PDF</span></div><span>Сертификат</span><strong>Общая хирургия</strong></article>
-          <article><div class="doc-thumb visual-placeholder"><span>PDF</span></div><span>Экзамен</span><strong>Пластическая хирургия</strong></article>
-          <article><div class="doc-thumb visual-placeholder"><span>PDF</span></div><span>Курсы</span><strong>Дополнительное обучение</strong></article>
+      <section class="section muted-block">
+        <div class="container">
+          <div class="section-head">
+            <p class="label">Документы</p>
+            <h2>Образование и сертификаты</h2>
+          </div>
+          <div class="cards four">
+            <article class="card doc-card"><div class="doc-thumb">PDF</div><h3>Медицинское образование</h3><p>Диплом и базовая информация.</p></article>
+            <article class="card doc-card"><div class="doc-thumb">PDF</div><h3>Общая хирургия</h3><p>Сертификаты и квалификация.</p></article>
+            <article class="card doc-card"><div class="doc-thumb">PDF</div><h3>Пластическая хирургия</h3><p>Экзамен и документы.</p></article>
+            <article class="card doc-card"><div class="doc-thumb">PDF</div><h3>Дополнительное обучение</h3><p>Курсы и конференции.</p></article>
+          </div>
         </div>
       </section>
 
-      <section class="section section-pad compact-section" id="cases">
-        <div class="section-heading light-heading">
-          <p class="eyebrow">Материалы</p>
+      <section class="section container">
+        <div class="section-head">
+          <p class="label">Материалы</p>
           <h2>Кейсы, отзывы, результаты</h2>
           <p>Только обезличенные случаи и фото с разрешением пациента.</p>
         </div>
-        <div class="cases-grid compact-cases">
-          <article class="case-card"><div class="case-image visual-placeholder blush-soft">До / После</div><span>Пластика</span><h3>Карточка результата</h3><p>Фото и короткое описание без лишних деталей.</p></article>
-          <article class="case-card"><div class="case-image visual-placeholder accent-soft">Кейс</div><span>Онкохирургия</span><h3>Клинический случай</h3><p>Задача, тактика и наблюдение.</p></article>
-          <article class="case-card"><div class="case-image visual-placeholder">Отзыв</div><span>Пациентский опыт</span><h3>Отзывы</h3><p>Короткие отзывы с разрешением на публикацию.</p></article>
+        <div class="cards three">
+          <article class="card"><div class="thumb pink">До / После</div><h3>Карточка результата</h3><p>Фото и короткое описание без лишних деталей.</p></article>
+          <article class="card"><div class="thumb blue">Кейс</div><h3>Клинический случай</h3><p>Задача, тактика и наблюдение.</p></article>
+          <article class="card"><div class="thumb">Отзыв</div><h3>Отзывы</h3><p>Короткие отзывы с разрешением на публикацию.</p></article>
         </div>
-      </section>
-
-      <section class="section section-pad contact-section compact-contact">
-        <div class="contact-card">
-          <p class="eyebrow">Запись</p>
-          <h2>Записаться на консультацию</h2>
-          <p>После уточнения данных тут будут реальные контакты и адрес клиники.</p>
-          <div class="contact-actions"><a class="button button-primary" href="tel:+000000000000">Позвонить</a><a class="button button-secondary" href="https://wa.me/000000000000">WhatsApp</a></div>
-        </div>
-        <div class="contact-visual visual-placeholder"><span>Клиника</span></div>
       </section>
     </main>
 
-    <footer class="site-footer"><p>© <span id="year"></span> Dr. Viktoria. Информация на сайте не заменяет очную консультацию врача.</p><a href="#top">Наверх ↑</a></footer>
-    <script src="script.js"></script>
+    <footer class="footer container">
+      <p>© <span id="year"></span> Dr. Viktoria. Информация на сайте не заменяет очную консультацию врача.</p>
+      <a href="#top">Наверх ↑</a>
+    </footer>
+
+    <script src="script.js?v=3"></script>
   </body>
 </html>
