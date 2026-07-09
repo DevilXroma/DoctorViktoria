@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Услуги Dr. Viktoria: общая хирургия, хирургическая онкология, пластическая хирургия." />
+    <title>Услуги — Dr. Viktoria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <a class="logo" href="index.html" aria-label="На главную">
+        <span class="logo-mark">DV</span>
+        <span><strong>Dr. Viktoria</strong><small>хирург</small></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
+      <nav class="main-nav" aria-label="Основная навигация">
+        <a href="index.html#directions">Направления</a>
+        <a href="services.html">Услуги</a>
+        <a href="about.html">О враче</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="index.html#contacts">Контакты</a>
+      </nav>
+      <a class="header-cta" href="index.html#contacts">Записаться</a>
+    </header>
+
+    <main>
+      <section class="page-hero section-pad">
+        <p class="eyebrow">Каталог</p>
+        <h1>Услуги и направления</h1>
+        <p>Эта страница нужна для полного перечня работ. Сейчас тут заглушки, потом заменим на реальные операции и консультации.</p>
+      </section>
+
+      <section class="section section-pad compact-section" id="catalog">
+        <div class="filter-panel sticky-filter" aria-label="Фильтр направлений">
+          <button class="filter-btn active" type="button" data-filter="all">Все</button>
+          <button class="filter-btn" type="button" data-filter="general">Общая</button>
+          <button class="filter-btn" type="button" data-filter="oncology">Онко</button>
+          <button class="filter-btn" type="button" data-filter="plastic">Пластика</button>
+        </div>
+
+        <div class="service-section-label" id="general">
+          <p class="eyebrow">Общая хирургия</p>
+        </div>
+        <div class="services-grid catalog-grid">
+          <article class="service-card" data-category="general"><span>Консультация</span><h3>Первичный прием хирурга</h3><p>Осмотр, разбор жалоб, заключений и дальнейший план обследования или лечения.</p></article>
+          <article class="service-card" data-category="general"><span>Наблюдение</span><h3>Послеоперационный контроль</h3><p>Контроль восстановления, рекомендации, перевязки и оценка динамики.</p></article>
+          <article class="service-card" data-category="general"><span>Мягкие ткани</span><h3>Образования кожи и тканей</h3><p>Оценка необходимости удаления, диагностики или наблюдения.</p></article>
+          <article class="service-card" data-category="general"><span>Планово</span><h3>Грыжи и другие жалобы</h3><p>Разбор симптомов, показаний к операции и сроков вмешательства.</p></article>
+        </div>
+
+        <div class="service-section-label" id="oncology">
+          <p class="eyebrow">Хирургическая онкология</p>
+        </div>
+        <div class="services-grid catalog-grid">
+          <article class="service-card" data-category="oncology"><span>Второе мнение</span><h3>Разбор диагноза</h3><p>Оценка имеющихся обследований и предложенного плана лечения.</p></article>
+          <article class="service-card" data-category="oncology"><span>Тактика</span><h3>План хирургического лечения</h3><p>Обсуждение показаний, рисков, подготовки и дальнейшего наблюдения.</p></article>
+          <article class="service-card" data-category="oncology"><span>Документы</span><h3>Разбор обследований</h3><p>Заключения, снимки, анализы и вопросы, которые важно уточнить до операции.</p></article>
+          <article class="service-card" data-category="oncology"><span>Маршрут</span><h3>Что делать дальше</h3><p>Понятный следующий шаг: дополнительные обследования, консультации или операция.</p></article>
+        </div>
+
+        <div class="service-section-label" id="plastic">
+          <p class="eyebrow">Пластическая хирургия</p>
+        </div>
+        <div class="services-grid catalog-grid">
+          <article class="service-card" data-category="plastic"><span>Старт</span><h3>Первичная консультация</h3><p>Анализ запроса, ожиданий, анатомических особенностей и противопоказаний.</p></article>
+          <article class="service-card" data-category="plastic"><span>План</span><h3>Подготовка к операции</h3><p>Какие обследования нужны, как проходит подготовка и что важно заранее.</p></article>
+          <article class="service-card" data-category="plastic"><span>Реабилитация</span><h3>План восстановления</h3><p>Сроки, ограничения, контрольные визиты и рекомендации после операции.</p></article>
+          <article class="service-card" data-category="plastic"><span>Ожидания</span><h3>Реалистичный результат</h3><p>Обсуждение желаемого результата, медицинских ограничений и безопасности.</p></article>
+        </div>
+      </section>
+
+      <section class="section section-pad contact-section compact-contact">
+        <div class="contact-card">
+          <p class="eyebrow">Запись</p>
+          <h2>Нужна консультация?</h2>
+          <p>После уточнения данных тут будут реальные контакты и адрес клиники.</p>
+          <div class="contact-actions">
+            <a class="button button-primary" href="tel:+000000000000">Позвонить</a>
+            <a class="button button-secondary" href="https://wa.me/000000000000">WhatsApp</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Dr. Viktoria. Информация на сайте не заменяет очную консультацию врача.</p>
+      <a href="#top">Наверх ↑</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
