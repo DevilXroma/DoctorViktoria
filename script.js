@@ -18,10 +18,12 @@ if (navToggle) {
 }
 
 navLinks.forEach((link) => {
-  const linkPath = link.getAttribute('href')?.split('#')[0];
+  const href = link.getAttribute('href') || '';
+  const linkPath = href.split('#')[0];
+  const hasHash = href.includes('#');
   const currentPath = window.location.pathname.split('/').pop() || 'index.html';
 
-  if (linkPath === currentPath) {
+  if (!hasHash && linkPath === currentPath) {
     link.classList.add('active');
   }
 
