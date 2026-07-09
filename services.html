@@ -8,66 +8,67 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=5" />
+    <link rel="stylesheet" href="styles.css?v=6" />
   </head>
   <body>
     <header class="header">
-      <a class="brand" href="index.html"><span class="brand-mark">DV</span><span><strong>Dr. Viktoria</strong><small>хирург</small></span></a>
+      <a class="brand" href="index.html"><span class="brand-mark">DV</span><span><strong>Dr. Viktoria</strong><small data-i18n="brand.role">хирург</small></span></a>
+      <div class="language-switch" aria-label="Выбор языка"><button type="button" data-lang="hy" aria-label="Հայերեն">🇦🇲</button><button type="button" data-lang="en" aria-label="English">🇬🇧</button><button type="button" data-lang="ru" aria-label="Русский">🇷🇺</button></div>
       <button class="menu-button" type="button" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
       <nav class="nav" aria-label="Основная навигация">
-        <a href="index.html">Главная</a>
-        <a href="services.html">Услуги</a>
-        <a href="about.html">О враче</a>
-        <a class="nav-cta" href="index.html#contacts">Запись</a>
+        <a href="index.html" data-i18n="nav.home">Главная</a>
+        <a href="services.html" data-i18n="nav.services">Услуги</a>
+        <a href="about.html" data-i18n="nav.about">О враче</a>
+        <a class="nav-cta" href="index.html#contacts" data-i18n="nav.book">Запись</a>
       </nav>
     </header>
 
     <main>
       <section class="page-hero container">
         <div>
-          <p class="label">Каталог</p>
-          <h1>Услуги и направления</h1>
-          <p class="lead">Здесь будет полный перечень консультаций и операций. Сейчас — аккуратный каркас для будущего заполнения.</p>
+          <p class="label" data-i18n="services.hero.label">Каталог</p>
+          <h1 data-i18n="services.hero.title">Услуги и направления</h1>
+          <p class="lead" data-i18n="services.hero.text">Здесь будет полный перечень консультаций и операций. Сейчас — аккуратный каркас для будущего заполнения.</p>
         </div>
-        <div class="image-slot page-visual">Услуги</div>
+        <div class="image-slot page-visual"><img src="assets/catalog.svg" alt="Каталог услуг" /></div>
       </section>
 
       <section class="section container compact" id="catalog">
         <div class="filters" aria-label="Фильтр направлений">
-          <button class="filter-btn active" type="button" data-filter="all">Все</button>
-          <button class="filter-btn" type="button" data-filter="general">Общая</button>
-          <button class="filter-btn" type="button" data-filter="oncology">Онко</button>
-          <button class="filter-btn" type="button" data-filter="plastic">Пластика</button>
+          <button class="filter-btn active" type="button" data-filter="all" data-i18n="filter.all">Все</button>
+          <button class="filter-btn" type="button" data-filter="general" data-i18n="filter.general">Общая</button>
+          <button class="filter-btn" type="button" data-filter="oncology" data-i18n="filter.oncology">Онко</button>
+          <button class="filter-btn" type="button" data-filter="plastic" data-i18n="filter.plastic">Пластика</button>
         </div>
 
-        <p class="label catalog-label" id="general">Общая хирургия</p>
+        <p class="label catalog-label" id="general" data-i18n="service.general.title">Общая хирургия</p>
         <div class="cards three catalog-grid">
-          <article class="card catalog-card" data-category="general"><div class="thumb">01</div><h3>Первичный прием хирурга</h3><p>Осмотр, разбор жалоб и понятный план дальнейших действий.</p><details><summary>Подробнее</summary><p>Документы, обследования и рекомендации после консультации.</p></details></article>
-          <article class="card catalog-card" data-category="general"><div class="thumb">02</div><h3>Послеоперационный контроль</h3><p>Проверка восстановления, перевязки и рекомендации.</p><details><summary>Подробнее</summary><p>Контрольные визиты и оценка динамики после вмешательства.</p></details></article>
-          <article class="card catalog-card" data-category="general"><div class="thumb">03</div><h3>Образования кожи и тканей</h3><p>Оценка необходимости диагностики, наблюдения или удаления.</p><details><summary>Подробнее</summary><p>Точный список процедур уточним после данных врача.</p></details></article>
+          <article class="card catalog-card" data-category="general"><div class="thumb"><img src="assets/general-surgery.svg" alt="Общая хирургия" /></div><h3 data-i18n="services.general.1.title">Первичный прием хирурга</h3><p data-i18n="services.general.1.text">Осмотр, разбор жалоб и понятный план дальнейших действий.</p><details><summary data-i18n="common.more">Подробнее</summary><p data-i18n="services.general.1.more">Документы, обследования и рекомендации после консультации.</p></details></article>
+          <article class="card catalog-card" data-category="general"><div class="thumb"><img src="assets/general-surgery.svg" alt="Послеоперационный контроль" /></div><h3 data-i18n="services.general.2.title">Послеоперационный контроль</h3><p data-i18n="services.general.2.text">Проверка восстановления, перевязки и рекомендации.</p><details><summary data-i18n="common.more">Подробнее</summary><p data-i18n="services.general.2.more">Контрольные визиты и оценка динамики после вмешательства.</p></details></article>
+          <article class="card catalog-card" data-category="general"><div class="thumb"><img src="assets/general-surgery.svg" alt="Образования кожи и тканей" /></div><h3 data-i18n="services.general.3.title">Образования кожи и тканей</h3><p data-i18n="services.general.3.text">Оценка необходимости диагностики, наблюдения или удаления.</p><details><summary data-i18n="common.more">Подробнее</summary><p data-i18n="services.general.3.more">Точный список процедур уточним после данных врача.</p></details></article>
         </div>
 
-        <p class="label catalog-label" id="oncology">Хирургическая онкология</p>
+        <p class="label catalog-label" id="oncology" data-i18n="service.oncology.title">Хирургическая онкология</p>
         <div class="cards three catalog-grid">
-          <article class="card catalog-card" data-category="oncology"><div class="thumb blue">01</div><h3>Второе мнение</h3><p>Разбор диагноза, обследований и предложенного плана.</p><details><summary>Подробнее</summary><p>Лучше взять заключения, анализы и снимки.</p></details></article>
-          <article class="card catalog-card" data-category="oncology"><div class="thumb blue">02</div><h3>План хирургического лечения</h3><p>Обсуждение показаний, подготовки, рисков и наблюдения.</p><details><summary>Подробнее</summary><p>Формулировки уточним под реальные зоны специализации.</p></details></article>
-          <article class="card catalog-card" data-category="oncology"><div class="thumb blue">03</div><h3>Маршрут пациента</h3><p>Понятный следующий шаг после консультации.</p><details><summary>Подробнее</summary><p>Дополнительные обследования, консультации или подготовка к операции.</p></details></article>
+          <article class="card catalog-card" data-category="oncology"><div class="thumb"><img src="assets/oncology.svg" alt="Онкохирургия" /></div><h3 data-i18n="services.oncology.1.title">Второе мнение</h3><p data-i18n="services.oncology.1.text">Разбор диагноза, обследований и предложенного плана.</p><details><summary data-i18n="common.more">Подробнее</summary><p data-i18n="services.oncology.1.more">Лучше взять заключения, анализы и снимки.</p></details></article>
+          <article class="card catalog-card" data-category="oncology"><div class="thumb"><img src="assets/oncology.svg" alt="План хирургического лечения" /></div><h3 data-i18n="services.oncology.2.title">План хирургического лечения</h3><p data-i18n="services.oncology.2.text">Обсуждение показаний, подготовки, рисков и наблюдения.</p><details><summary data-i18n="common.more">Подробнее</summary><p data-i18n="services.oncology.2.more">Формулировки уточним под реальные зоны специализации.</p></details></article>
+          <article class="card catalog-card" data-category="oncology"><div class="thumb"><img src="assets/oncology.svg" alt="Маршрут пациента" /></div><h3 data-i18n="services.oncology.3.title">Маршрут пациента</h3><p data-i18n="services.oncology.3.text">Понятный следующий шаг после консультации.</p><details><summary data-i18n="common.more">Подробнее</summary><p data-i18n="services.oncology.3.more">Дополнительные обследования, консультации или подготовка к операции.</p></details></article>
         </div>
 
-        <p class="label catalog-label" id="plastic">Пластическая хирургия</p>
+        <p class="label catalog-label" id="plastic" data-i18n="service.plastic.title">Пластическая хирургия</p>
         <div class="cards three catalog-grid">
-          <article class="card catalog-card" data-category="plastic"><div class="thumb pink">01</div><h3>Первичная консультация</h3><p>Запрос, ожидания, ограничения и безопасность.</p><details><summary>Подробнее</summary><p>Оценка анатомических особенностей и противопоказаний.</p></details></article>
-          <article class="card catalog-card" data-category="plastic"><div class="thumb pink">02</div><h3>Подготовка к операции</h3><p>Обследования, сроки и реалистичный план.</p><details><summary>Подробнее</summary><p>Без обещаний идеального результата, только после очного приема.</p></details></article>
-          <article class="card catalog-card" data-category="plastic"><div class="thumb pink">03</div><h3>Восстановление</h3><p>Ограничения, контрольные визиты и рекомендации.</p><details><summary>Подробнее</summary><p>Сроки зависят от типа вмешательства.</p></details></article>
+          <article class="card catalog-card" data-category="plastic"><div class="thumb"><img src="assets/plastic.svg" alt="Пластическая хирургия" /></div><h3 data-i18n="services.plastic.1.title">Первичная консультация</h3><p data-i18n="services.plastic.1.text">Запрос, ожидания, ограничения и безопасность.</p><details><summary data-i18n="common.more">Подробнее</summary><p data-i18n="services.plastic.1.more">Оценка анатомических особенностей и противопоказаний.</p></details></article>
+          <article class="card catalog-card" data-category="plastic"><div class="thumb"><img src="assets/plastic.svg" alt="Подготовка к операции" /></div><h3 data-i18n="services.plastic.2.title">Подготовка к операции</h3><p data-i18n="services.plastic.2.text">Обследования, сроки и реалистичный план.</p><details><summary data-i18n="common.more">Подробнее</summary><p data-i18n="services.plastic.2.more">Без обещаний идеального результата, только после очного приема.</p></details></article>
+          <article class="card catalog-card" data-category="plastic"><div class="thumb"><img src="assets/plastic.svg" alt="Восстановление" /></div><h3 data-i18n="services.plastic.3.title">Восстановление</h3><p data-i18n="services.plastic.3.text">Ограничения, контрольные визиты и рекомендации.</p><details><summary data-i18n="common.more">Подробнее</summary><p data-i18n="services.plastic.3.more">Сроки зависят от типа вмешательства.</p></details></article>
         </div>
       </section>
     </main>
 
     <footer class="footer container">
-      <p>© <span id="year"></span> Dr. Viktoria. Информация на сайте не заменяет очную консультацию врача.</p>
-      <a href="#top">Наверх ↑</a>
+      <p data-i18n="footer.disclaimer">© <span id="year"></span> Dr. Viktoria. Информация на сайте не заменяет очную консультацию врача.</p>
+      <a href="#top" data-i18n="footer.top">Наверх ↑</a>
     </footer>
 
-    <script src="script.js?v=3"></script>
+    <script src="script.js?v=4"></script>
   </body>
 </html>
