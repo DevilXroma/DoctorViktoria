@@ -8,85 +8,91 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=5" />
+    <link rel="stylesheet" href="styles.css?v=6" />
   </head>
   <body>
     <header class="header">
       <a class="brand" href="index.html" aria-label="На главную">
         <span class="brand-mark">DV</span>
-        <span><strong>Dr. Viktoria</strong><small>хирург</small></span>
+        <span><strong>Dr. Viktoria</strong><small data-i18n="brand.role">хирург</small></span>
       </a>
+
+      <div class="language-switch" aria-label="Выбор языка">
+        <button type="button" data-lang="hy" aria-label="Հայերեն">🇦🇲</button>
+        <button type="button" data-lang="en" aria-label="English">🇬🇧</button>
+        <button type="button" data-lang="ru" aria-label="Русский">🇷🇺</button>
+      </div>
 
       <button class="menu-button" type="button" aria-label="Открыть меню" aria-expanded="false">
         <span></span><span></span>
       </button>
 
       <nav class="nav" aria-label="Основная навигация">
-        <a href="index.html">Главная</a>
-        <a href="services.html">Услуги</a>
-        <a href="about.html">О враче</a>
-        <a class="nav-cta" href="#contacts">Запись</a>
+        <a href="index.html" data-i18n="nav.home">Главная</a>
+        <a href="services.html" data-i18n="nav.services">Услуги</a>
+        <a href="about.html" data-i18n="nav.about">О враче</a>
+        <a class="nav-cta" href="#contacts" data-i18n="nav.book">Запись</a>
       </nav>
     </header>
 
     <main>
       <section class="hero container">
         <div class="hero-copy">
-          <p class="label">Хирург · Онкохирург · Пластическая хирургия</p>
-          <h1>Понятная хирургическая консультация</h1>
-          <p class="lead">Разбор ситуации, показаний к операции и безопасного плана лечения — без лишней тревоги.</p>
+          <p class="label" data-i18n="home.hero.label">Хирург · Онкохирург · Пластическая хирургия</p>
+          <h1 data-i18n="home.hero.title">Понятная хирургическая консультация</h1>
+          <p class="lead" data-i18n="home.hero.text">Разбор ситуации, показаний к операции и безопасного плана лечения — без лишней тревоги.</p>
           <div class="actions">
-            <a class="button primary" href="#contacts">Записаться</a>
-            <a class="button secondary" href="services.html">Смотреть услуги</a>
+            <a class="button primary" href="#contacts" data-i18n="common.book">Записаться</a>
+            <a class="button secondary" href="services.html" data-i18n="common.viewServices">Смотреть услуги</a>
           </div>
           <div class="chips" aria-label="Краткая информация">
-            <span>Ереван</span><span>по записи</span><span>RU / AM / EN</span>
+            <span data-i18n="common.city">Ереван</span><span data-i18n="common.byAppointment">по записи</span><span>RU / AM / EN</span>
           </div>
         </div>
         <div class="photo-card hero-photo">
-          <span>Фото врача</span>
-          <div class="photo-note"><strong>Доктор Виктория [Фамилия]</strong><small>консультации и хирургическое лечение</small></div>
+          <img src="assets/doctor.svg" alt="Фото врача" />
+          <div class="photo-note"><strong data-i18n="doctor.name">Доктор Виктория [Фамилия]</strong><small data-i18n="home.hero.note">консультации и хирургическое лечение</small></div>
         </div>
       </section>
 
       <section class="section container">
         <div class="section-head">
-          <p class="label">Направления</p>
-          <h2>С чем можно обратиться</h2>
+          <p class="label" data-i18n="home.directions.label">Направления</p>
+          <h2 data-i18n="home.directions.title">С чем можно обратиться</h2>
         </div>
 
         <div class="cards three">
           <article class="card service-preview">
-            <div class="thumb">Общая</div>
-            <h3>Общая хирургия</h3>
-            <p>Плановые консультации, хирургические жалобы и наблюдение после операции.</p>
+            <div class="thumb"><img src="assets/general-surgery.svg" alt="Общая хирургия" /></div>
+            <h3 data-i18n="service.general.title">Общая хирургия</h3>
+            <p data-i18n="service.general.short">Плановые консультации, хирургические жалобы и наблюдение после операции.</p>
             <details>
-              <summary>Что входит</summary>
-              <p>Прием, осмотр, разбор обследований и план дальнейших действий.</p>
+              <summary data-i18n="common.whatIncluded">Что входит</summary>
+              <p data-i18n="service.general.more">Прием, осмотр, разбор обследований и план дальнейших действий.</p>
             </details>
-            <a class="text-link" href="services.html#general">Подробнее</a>
+            <a class="text-link" href="services.html#general" data-i18n="common.more">Подробнее</a>
           </article>
 
           <article class="card service-preview">
-            <div class="thumb blue">Онко</div>
-            <h3>Хирургическая онкология</h3>
-            <p>Второе мнение, оценка обследований и обсуждение тактики лечения.</p>
+            <div class="thumb"><img src="assets/oncology.svg" alt="Онкохирургия" /></div>
+            <h3 data-i18n="service.oncology.title">Хирургическая онкология</h3>
+            <p data-i18n="service.oncology.short">Второе мнение, оценка обследований и обсуждение тактики лечения.</p>
             <details>
-              <summary>Что взять</summary>
-              <p>Заключения, анализы, снимки и предложенный ранее план лечения.</p>
+              <summary data-i18n="common.whatToBring">Что взять</summary>
+              <p data-i18n="service.oncology.more">Заключения, анализы, снимки и предложенный ранее план лечения.</p>
             </details>
-            <a class="text-link" href="services.html#oncology">Подробнее</a>
+            <a class="text-link" href="services.html#oncology" data-i18n="common.more">Подробнее</a>
           </article>
 
           <article class="card service-preview">
-            <div class="thumb pink">Пластика</div>
-            <h3>Пластическая хирургия</h3>
-            <p>Консультация, реалистичные ожидания, подготовка и восстановление.</p>
+            <div class="thumb"><img src="assets/plastic.svg" alt="Пластическая хирургия" /></div>
+            <h3 data-i18n="service.plastic.title">Пластическая хирургия</h3>
+            <p data-i18n="service.plastic.short">Консультация, реалистичные ожидания, подготовка и восстановление.</p>
             <details>
-              <summary>На приеме</summary>
-              <p>Разбор запроса, медицинских ограничений и возможного плана коррекции.</p>
+              <summary data-i18n="common.atVisit">На приеме</summary>
+              <p data-i18n="service.plastic.more">Разбор запроса, медицинских ограничений и возможного плана коррекции.</p>
             </details>
-            <a class="text-link" href="services.html#plastic">Подробнее</a>
+            <a class="text-link" href="services.html#plastic" data-i18n="common.more">Подробнее</a>
           </article>
         </div>
       </section>
@@ -94,14 +100,14 @@
       <section class="section container compact">
         <div class="process-card">
           <div>
-            <p class="label">Прием</p>
-            <h2>Коротко и по делу</h2>
+            <p class="label" data-i18n="home.process.label">Прием</p>
+            <h2 data-i18n="home.process.title">Коротко и по делу</h2>
           </div>
           <div class="steps">
-            <div class="step"><b>1</b><span>Запись</span></div>
-            <div class="step"><b>2</b><span>Осмотр</span></div>
-            <div class="step"><b>3</b><span>План</span></div>
-            <div class="step"><b>4</b><span>Контроль</span></div>
+            <div class="step"><b>1</b><span data-i18n="step.book">Запись</span></div>
+            <div class="step"><b>2</b><span data-i18n="step.exam">Осмотр</span></div>
+            <div class="step"><b>3</b><span data-i18n="step.plan">План</span></div>
+            <div class="step"><b>4</b><span data-i18n="step.follow">Контроль</span></div>
           </div>
         </div>
       </section>
@@ -109,29 +115,29 @@
       <section class="section container compact">
         <div class="wide-card">
           <div>
-            <p class="label">Каталог</p>
-            <h2>Полный список услуг — отдельно</h2>
-            <p>Главная остается легкой, а полный перечень консультаций и операций открыт на отдельной странице.</p>
-            <a class="button secondary" href="services.html">Открыть услуги</a>
+            <p class="label" data-i18n="home.catalog.label">Каталог</p>
+            <h2 data-i18n="home.catalog.title">Полный список услуг — отдельно</h2>
+            <p data-i18n="home.catalog.text">Главная остается легкой, а полный перечень консультаций и операций открыт на отдельной странице.</p>
+            <a class="button secondary" href="services.html" data-i18n="home.catalog.button">Открыть услуги</a>
           </div>
-          <div class="image-slot">Каталог услуг</div>
+          <div class="image-slot"><img src="assets/catalog.svg" alt="Каталог услуг" /></div>
         </div>
       </section>
 
       <section class="section faq-section" id="faq">
         <div class="container">
           <div class="section-head">
-            <p class="label">Вопросы</p>
-            <h2>Перед консультацией</h2>
+            <p class="label" data-i18n="home.faq.label">Вопросы</p>
+            <h2 data-i18n="home.faq.title">Перед консультацией</h2>
           </div>
           <div class="faq-list">
             <details class="faq-item">
-              <summary>Нужно ли приходить с анализами?</summary>
-              <p>Если обследования уже есть, лучше взять их с собой. Если нет — врач подскажет, что действительно нужно.</p>
+              <summary data-i18n="faq.tests.q">Нужно ли приходить с анализами?</summary>
+              <p data-i18n="faq.tests.a">Если обследования уже есть, лучше взять их с собой. Если нет — врач подскажет, что действительно нужно.</p>
             </details>
             <details class="faq-item">
-              <summary>Можно ли получить второе мнение?</summary>
-              <p>Да, можно прийти с диагнозом, заключениями и предложенным планом лечения.</p>
+              <summary data-i18n="faq.second.q">Можно ли получить второе мнение?</summary>
+              <p data-i18n="faq.second.a">Да, можно прийти с диагнозом, заключениями и предложенным планом лечения.</p>
             </details>
           </div>
         </div>
@@ -140,25 +146,25 @@
       <section class="section container" id="contacts">
         <div class="contact-grid">
           <div class="contact-card">
-            <p class="label">Запись</p>
-            <h2>Записаться на консультацию</h2>
-            <p>Позже добавим реальные контакты, адрес клиники и расписание приема.</p>
+            <p class="label" data-i18n="contact.label">Запись</p>
+            <h2 data-i18n="contact.title">Записаться на консультацию</h2>
+            <p data-i18n="contact.text">Позже добавим реальные контакты, адрес клиники и расписание приема.</p>
             <div class="actions">
-              <a class="button light" href="tel:+000000000000">Позвонить</a>
+              <a class="button light" href="tel:+000000000000" data-i18n="contact.call">Позвонить</a>
               <a class="button light" href="https://wa.me/000000000000">WhatsApp</a>
               <a class="button light" href="https://t.me/username">Telegram</a>
             </div>
           </div>
-          <div class="image-slot map-slot">Карта / клиника</div>
+          <div class="image-slot map-slot"><img src="assets/clinic.svg" alt="Карта и клиника" /></div>
         </div>
       </section>
     </main>
 
     <footer class="footer container">
-      <p>© <span id="year"></span> Dr. Viktoria. Информация на сайте не заменяет очную консультацию врача.</p>
-      <a href="#top">Наверх ↑</a>
+      <p data-i18n="footer.disclaimer">© <span id="year"></span> Dr. Viktoria. Информация на сайте не заменяет очную консультацию врача.</p>
+      <a href="#top" data-i18n="footer.top">Наверх ↑</a>
     </footer>
 
-    <script src="script.js?v=3"></script>
+    <script src="script.js?v=4"></script>
   </body>
 </html>
