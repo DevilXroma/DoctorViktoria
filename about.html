@@ -12,19 +12,14 @@
   </head>
   <body>
     <header class="site-header" id="top">
-      <a class="logo" href="index.html" aria-label="На главную">
-        <span class="logo-mark">DV</span>
-        <span><strong>Dr. Viktoria</strong><small>хирург</small></span>
-      </a>
+      <a class="logo" href="index.html" aria-label="На главную"><span class="logo-mark">DV</span><span><strong>Dr. Viktoria</strong><small>хирург</small></span></a>
       <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
       <nav class="main-nav" aria-label="Основная навигация">
-        <a href="index.html#directions">Направления</a>
+        <a href="index.html">Главная</a>
         <a href="services.html">Услуги</a>
         <a href="about.html">О враче</a>
-        <a href="index.html#faq">FAQ</a>
-        <a href="index.html#contacts">Контакты</a>
+        <a href="index.html#contacts" class="nav-contact">Запись</a>
       </nav>
-      <a class="header-cta" href="index.html#contacts">Записаться</a>
     </header>
 
     <main>
@@ -32,50 +27,45 @@
         <div>
           <p class="eyebrow">О враче</p>
           <h1>Доктор Виктория [Фамилия]</h1>
-          <p>Временный текст для профиля врача: опыт в общей хирургии, хирургической онкологии и новое направление в пластической хирургии.</p>
+          <p>Профиль врача: опыт, подход к пациентам, документы и материалы для доверия.</p>
         </div>
-        <div class="profile-photo"><span>Фото врача</span></div>
+        <div class="profile-photo visual-placeholder"><span>Портрет</span></div>
       </section>
 
-      <section class="section section-pad split-section compact-section">
-        <div>
-          <p class="eyebrow">Подход</p>
-          <h2>Спокойно, понятно, по показаниям</h2>
-          <p class="lead">Пациенту важно не только получить диагноз, но и понять, что происходит, какие есть варианты и почему выбран именно такой план.</p>
-          <p>Здесь позже будет человеческий текст: образование, опыт, специализация, клиники, профессиональные интересы и отношение к пациентам.</p>
-        </div>
-        <div class="bio-panel compact-bio">
-          <div><span>Стаж</span><strong>XX лет</strong></div>
-          <div><span>Специализация</span><strong>Хирургия / онкология / пластика</strong></div>
-          <div><span>Прием</span><strong>Ереван · клиника уточняется</strong></div>
-          <div><span>Языки</span><strong>Русский · Армянский · Английский</strong></div>
+      <section class="section section-pad split-lite compact-section">
+        <div class="wide-card visual-card-large">
+          <div class="wide-card-copy">
+            <p class="eyebrow">Подход</p>
+            <h2>Спокойно, понятно, по показаниям</h2>
+            <p>Здесь позже будет короткий личный текст: образование, опыт, клиники и профессиональные принципы.</p>
+          </div>
+          <div class="wide-card-media visual-placeholder accent-soft"><span>Рабочее фото</span></div>
         </div>
       </section>
 
       <section class="section section-pad muted compact-section" id="documents">
-        <div class="section-heading compact-heading">
+        <div class="section-heading light-heading">
           <p class="eyebrow">Документы</p>
           <h2>Образование и сертификаты</h2>
-          <p>Этот блок лучше держать отдельно от главной, потому что он нужен для доверия, но не должен растягивать лендинг.</p>
         </div>
         <div class="documents-grid compact-docs">
-          <article><span>Диплом</span><strong>Медицинское образование</strong></article>
-          <article><span>Сертификат</span><strong>Общая хирургия</strong></article>
-          <article><span>Экзамен</span><strong>Пластическая хирургия</strong></article>
-          <article><span>Курсы</span><strong>Дополнительное обучение</strong></article>
+          <article><div class="doc-thumb visual-placeholder"><span>PDF</span></div><span>Диплом</span><strong>Медицинское образование</strong></article>
+          <article><div class="doc-thumb visual-placeholder"><span>PDF</span></div><span>Сертификат</span><strong>Общая хирургия</strong></article>
+          <article><div class="doc-thumb visual-placeholder"><span>PDF</span></div><span>Экзамен</span><strong>Пластическая хирургия</strong></article>
+          <article><div class="doc-thumb visual-placeholder"><span>PDF</span></div><span>Курсы</span><strong>Дополнительное обучение</strong></article>
         </div>
       </section>
 
       <section class="section section-pad compact-section" id="cases">
-        <div class="section-heading compact-heading">
-          <p class="eyebrow">Кейсы</p>
-          <h2>Работы и клинические случаи</h2>
-          <p>Здесь можно хранить обезличенные клинические случаи, отзывы и фото до/после при наличии согласия пациента.</p>
+        <div class="section-heading light-heading">
+          <p class="eyebrow">Материалы</p>
+          <h2>Кейсы, отзывы, результаты</h2>
+          <p>Только обезличенные случаи и фото с разрешением пациента.</p>
         </div>
         <div class="cases-grid compact-cases">
-          <article class="case-card"><div class="case-image">До / После</div><span>Пластика</span><h3>Карточка результата</h3><p>Описание задачи и восстановления без личных данных.</p></article>
-          <article class="case-card"><div class="case-image">Кейс</div><span>Онкохирургия</span><h3>Клинический случай</h3><p>Жалобы, обследования, тактика и наблюдение.</p></article>
-          <article class="case-card"><div class="case-image">Отзыв</div><span>Пациентский опыт</span><h3>Отзывы пациентов</h3><p>Короткие отзывы только с разрешением на публикацию.</p></article>
+          <article class="case-card"><div class="case-image visual-placeholder blush-soft">До / После</div><span>Пластика</span><h3>Карточка результата</h3><p>Фото и короткое описание без лишних деталей.</p></article>
+          <article class="case-card"><div class="case-image visual-placeholder accent-soft">Кейс</div><span>Онкохирургия</span><h3>Клинический случай</h3><p>Задача, тактика и наблюдение.</p></article>
+          <article class="case-card"><div class="case-image visual-placeholder">Отзыв</div><span>Пациентский опыт</span><h3>Отзывы</h3><p>Короткие отзывы с разрешением на публикацию.</p></article>
         </div>
       </section>
 
@@ -84,19 +74,13 @@
           <p class="eyebrow">Запись</p>
           <h2>Записаться на консультацию</h2>
           <p>После уточнения данных тут будут реальные контакты и адрес клиники.</p>
-          <div class="contact-actions">
-            <a class="button button-primary" href="tel:+000000000000">Позвонить</a>
-            <a class="button button-secondary" href="https://wa.me/000000000000">WhatsApp</a>
-          </div>
+          <div class="contact-actions"><a class="button button-primary" href="tel:+000000000000">Позвонить</a><a class="button button-secondary" href="https://wa.me/000000000000">WhatsApp</a></div>
         </div>
+        <div class="contact-visual visual-placeholder"><span>Клиника</span></div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <p>© <span id="year"></span> Dr. Viktoria. Информация на сайте не заменяет очную консультацию врача.</p>
-      <a href="#top">Наверх ↑</a>
-    </footer>
-
+    <footer class="site-footer"><p>© <span id="year"></span> Dr. Viktoria. Информация на сайте не заменяет очную консультацию врача.</p><a href="#top">Наверх ↑</a></footer>
     <script src="script.js"></script>
   </body>
 </html>
