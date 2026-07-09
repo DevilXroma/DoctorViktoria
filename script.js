@@ -18,25 +18,40 @@ if (navToggle) {
 }
 
 navLinks.forEach((link) => {
+  const linkPath = link.getAttribute('href')?.split('#')[0];
+  const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+
+  if (linkPath === currentPath) {
+    link.classList.add('active');
+  }
+
   link.addEventListener('click', () => {
     body.classList.remove('nav-open');
     navToggle?.setAttribute('aria-expanded', 'false');
   });
 });
 
+function applyServiceFilter(filter) {
+  filterButtons.forEach((item) => {
+    item.classList.toggle('active', item.dataset.filter === filter);
+  });
+
+  serviceCards.forEach((card) => {
+    const shouldShow = filter === 'all' || card.dataset.category === filter;
+    card.classList.toggle('is-hidden', !shouldShow);
+  });
+}
+
 filterButtons.forEach((button) => {
   button.addEventListener('click', () => {
-    const filter = button.dataset.filter;
-
-    filterButtons.forEach((item) => item.classList.remove('active'));
-    button.classList.add('active');
-
-    serviceCards.forEach((card) => {
-      const shouldShow = filter === 'all' || card.dataset.category === filter;
-      card.classList.toggle('is-hidden', !shouldShow);
-    });
+    applyServiceFilter(button.dataset.filter || 'all');
   });
 });
+
+const hashFilter = window.location.hash.replace('#', '');
+if (['general', 'oncology', 'plastic'].includes(hashFilter)) {
+  applyServiceFilter(hashFilter);
+}
 
 faqItems.forEach((item) => {
   const button = item.querySelector('button');
